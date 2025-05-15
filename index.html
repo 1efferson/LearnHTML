@@ -1,118 +1,164 @@
 <!DOCTYPE html>
 
-<html lang="en"> 
-
-
-<head>
+<html lang="en">
+  <head>
     <meta charset="UTF-8">
     <meta name="author" content="Jefferson Ampadu">
-    <meta name="description" content="This page cotains all the things I am learning how to create as I learn HTML.">
+    <meta
+      name="description"
+      content="This page cotains all the things I am learning how to create as I learn HTML."
+    >
     <title>My First Web Page</title>
     <link rel="icon" href="html5.png" type="image/x-icon">
     <link rel="stylesheet" href="main.css" type="text/css">
-    
-    
+  </head>
+  <body>
+    <header>
+      <h1>Awesome Page</h1>
 
-</head>
-<body>
-    <h1>Awesome Page</h1>
-
-    <hr>
-
-    <nav>
+      <nav aria-label="primary-avigation">
         <ul>
-            <li>
-                <a href="#html">Learning HTML</a>
-            </li>
-            <li>
-                <a href="#vacation">Planning a vacation</a>
-            </li>
-            
+          <li>
+            <a href="#html">Learning HTML</a>
+          </li>
+          <li>
+            <a href="#vacation">Planning a vacation</a>
+          </li>
         </ul>
-    </nav>
+      </nav>
+    </header>
 
     <hr>
+    <main>
+      <article id="html">
+        <h2>I am ready to learn HTML</h2>
+        <p>This is my first web page.</p>
 
-    <section id="html"> 
-    <h2>Certified Fantastic Site</h2>
-    <p>This is my first web page.</p>
-
-    <img src="img/html_logo_300x300.png" alt="HTLM5 Logo" title="I am Learning HTML5" width="300" height="300">
-    <figure>
-        <figcaption>
-            An Example of HTML5 Code
-            <p>
+        <section>
+          <h3>HTLM5</h3>
+          <img
+            src="img/html_logo_300x300.png"
+            alt="HTLM5 Logo"
+            title="I am Learning HTML5"
+            width="300"
+            height="300"
+          >
+          <figure>
+            <figcaption>
+              An Example of HTML5 Code
+              <p>
                 <code>&lt;h1&gt;Hello world&lt;/h1&gt;</code>
-            </p>
-        </figcaption>
-    </figure>
-
-    <h3>My Daily Schedule</h3>
-    <p>Let Me Tell You How:</p>
-        <ol>
+              </p>
+            </figcaption>
+          </figure>
+        </section>
+        <section>
+          <h3>My Daily Schedule</h3>
+          <p>Let Me Tell You How:</p>
+          <ol>
             <li>...I learn more about web dev</li>
             <li>...I pla out my schedule</li>
-            <li>...I use resources from <abbr title="Mozilla Developer Network">
-                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN</a> </abbr>.</li>
-        </ol>
-    </section>  
-     
-    <hr>
-     <section id="vacation">
+            <li>
+              ...I use resources from
+              <abbr title="Mozilla Developer Network">
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                  >MDN</a
+                > </abbr
+              >.
+            </li>
+          </ol>
+          <aside>
+            <details>
+              <summary>
+                Guess the <mark> number of hours</mark> I code per day
+              </summary>
+              <p>
+                I start at <time datetime="08:00">8 am </time>ad i write code
+                for <time datetime="PT3H">6 hours</time>.
+              </p>
+            </details>
+          </aside>
+        </section>
+      </article>
 
-    <h2>Am Planning A Vacation</h2>
-    <p>I have been working so hard,<em>I need a vacation.</em></p>
-    <p>I live in <abbr title="Ghana">GH</abbr>, so I want to visit the beach</p>
+      <hr>
 
-    <h3>Places I would like to visit</h3>
-    <ul>
-        <li>
-            <p>I heard the Caribbean Islands have some very beautiful beaches.</p>
-            <figure>
-                <img src="img/caribbean.jpg" alt="caribbean beach" title="I want to visit a Caribbean beach" width="400" height="225" loading="lazy">
-                <figcaption>
-                    Caribbean beach getaway
-                </figcaption>
-            </figure>
-        </li>
-        <li>
-            <p>Any where dry? <strong> NO WAY!. </strong></p>
-            <p>I have heard good things about going here:</p>
-            <address>
+      <article id="vacation">
+        <h2>Am Planning A Vacation</h2>
+        <p>I have been working so hard,<em>I need a vacation.</em></p>
+        <p>
+          I live in <abbr title="Ghana">GH</abbr>, so I want to visit the beach
+        </p>
+        <section>
+          <h3>Places I would like to visit</h3>
+          <ul>
+            <li>
+              <p>
+                I heard the Caribbean Islands have some very beautiful beaches.
+              </p>
+              <figure>
+                <img
+                  src="img/caribbean.jpg"
+                  alt="caribbean beach"
+                  title="I want to visit a Caribbean beach"
+                  width="400"
+                  height="225"
+                  loading="lazy"
+                >
+                <figcaption>Caribbean beach getaway</figcaption>
+              </figure>
+            </li>
+            <li>
+              <p>Any where dry? <strong> NO WAY!. </strong></p>
+              <p>I have heard good things about going here:</p>
+              <address>
                 Margaritavillle Island Reserve Riviera Cancun<br>
                 Bahia Petempich Puerto Morelos,Mexico<br>
                 Colonia Morelos, Mexico 77580
-            </address>
-        <figure>
-            <img src="img/vacation.jpg" alt="Cancun Vacation" title="it's 5 o'clock somewhere!" width="400" height="267" loading="lazy">
-                <figcaption>
-                    A Carribean Vacation Image
-                </figcaption>
-            </figure>
-        </li>
-    </ul>
-    <!-- TODO: ADD MORE PLACES-->
-    <h3>Places I would like to Avoid</h3>
-    <h4>Any Coutry with alot of guns like the USA</h4>
+              </address>
+              <figure>
+                <img
+                  src="img/vacation.jpg"
+                  alt="Cancun Vacation"
+                  title="it's 5 o'clock somewhere!"
+                  width="400"
+                  height="267"
+                  loading="lazy"
+                >
+                <figcaption>A Carribean Vacation Image</figcaption>
+              </figure>
+            </li>
+          </ul>
+        </section>
+        <!-- TODO: ADD MORE PLACES-->
+        <section>
+          <h3>Places I would like to Avoid</h3>
+          <h4>Any Country with alot of guns like the USA</h4>
 
-    <dl>
-        <dt>North Pole</dt>
-        <dd>I hear it is very <strong>cold</strong></dd>
+          <dl>
+            <dt>North Pole</dt>
+            <dd>I hear it is very <strong>cold</strong></dd>
 
-        <dt>South Pole</dt>
-        <dd> Same cold issue</dd>
+            <dt>South Pole</dt>
+            <dd>Same cold issue</dd>
 
-        <dt>Moutain Tops</dt>
-        <dd>Cold as hell too</dd>
-    </dl>
-    </section>
- 
+            <dt>Moutain Tops</dt>
+            <dd>Cold as hell too</dd>
+          </dl>
+        </section>
+      </article>
+    </main>
+
     <hr>
-    &lt;&lt;&lt; &copy; <a href = "about.html"> Jefferson Ampadu</a>&gt;&gt;&gt;&gt;
+    <footer>
+      <p>
+        &lt;&lt;&lt; &copy;
+        <a href="about.html"> Jefferson Ampadu</a>&gt;&gt;&gt;&gt;
+      </p>
 
-<p>
-    <a href="#">Back To Top </a>
-</p>
-
-</body>
-</html>  
+      <p>
+        <a href="#">Back To Top </a>
+      </p>
+    </footer>
+  </body>
+</html>
